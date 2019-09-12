@@ -1,0 +1,45 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++\ncompiler.version=8\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "23066e83-d54d-11e9-822e-645d86dec98e": {
+    "pref": "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412:7c51eb95141cdbf81897fab316c80a26dd65eeb2#d110b73843a367e5f9299978316bab95",
+    "options": "shared=False\nfontconfig:shared=False",
+    "modified": "Build",
+    "requires": {
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "23066e82-d54d-11e9-822e-645d86dec98e"
+    }
+   },
+   "23066e82-d54d-11e9-822e-645d86dec98e": {
+    "pref": "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a#d443648f32c5738dade94018195f56c9",
+    "options": "shared=False",
+    "modified": "Build"
+   },
+   "23066e84-d54d-11e9-822e-645d86dec98e": {
+    "pref": "zlib/1.0@_/_#0e280695800433574bfb184cc8621b73:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a#cb8a1c04641685b6378027edf53dd084",
+    "options": "shared=False",
+    "modified": "Build"
+   },
+   "23066e86-d54d-11e9-822e-645d86dec98e": {
+    "pref": "nano/1.0@_/_:8b89bc87b19a043064a6e0f1f6983b08056e2c85",
+    "options": "ffmpeg:bar=True\nffmpeg:shared=False\nfontconfig:shared=False\nharfbuzz:shared=False\nzlib:shared=False",
+    "requires": {
+     "ffmpeg/1.0@_/_#cd7f409375d9d1911124b65611feadf6": "23066e85-d54d-11e9-822e-645d86dec98e",
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "23066e82-d54d-11e9-822e-645d86dec98e",
+     "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412": "23066e83-d54d-11e9-822e-645d86dec98e"
+    }
+   },
+   "23066e85-d54d-11e9-822e-645d86dec98e": {
+    "pref": "ffmpeg/1.0@_/_#cd7f409375d9d1911124b65611feadf6:d3e70b6d64a9ab72d7d0d46f5d7a15319a30ed12#8b59be09d65d46f9e24cc047c6df2cc8",
+    "options": "bar=True\nshared=False\nfontconfig:shared=False\nharfbuzz:shared=False\nzlib:shared=False",
+    "modified": "Build",
+    "requires": {
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "23066e82-d54d-11e9-822e-645d86dec98e",
+     "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412": "23066e83-d54d-11e9-822e-645d86dec98e",
+     "zlib/1.0@_/_#0e280695800433574bfb184cc8621b73": "23066e84-d54d-11e9-822e-645d86dec98e"
+    }
+   }
+  }
+ },
+ "version": "0.1"
+}
